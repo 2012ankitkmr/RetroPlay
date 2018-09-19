@@ -1,0 +1,13 @@
+.tech-slideshow {
+  background: url("Tiles.jpg");
+  animation: moveSlideshow 25s linear infinite;
+}
+body{
+  margin: 0px;
+}
+
+@keyframes moveSlideshow {
+  100% {
+    transform: translateX(-66.66666%);
+  }
+}
