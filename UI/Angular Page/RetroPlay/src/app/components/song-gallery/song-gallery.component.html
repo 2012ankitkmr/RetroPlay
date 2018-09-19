@@ -1,0 +1,24 @@
+<!--==========================
+      Song Gallery Section 
+    ============================-->
+
+<div *ngIf="msgDisplay" class="msg-gallery">
+  <h1>No song to display!</h1>
+</div>
+<section id="songGallery" style="visibility : hidden;">
+  <div *ngIf="!msgDisplay" class="roundabout-carousal" id="waterwheelCarouselSongs">
+    <div class="carousal-unit" id="carousal-unit-songs" *ngFor="let song of songs">
+      <div class="gallery-banner" id="songGallery-banner">
+        <figure>
+          <img src="{{ 'assets/img/songs/'+ song.song_banner +'.jpg' }}" class="img-fluid" alt="" />
+          <a class="title-display">{{song.song_name}}</a>
+          <a class="song-preview" title="Play Song" (click)="sendSongRequestToPlayer(song.song_id)">
+            <i class="fa fa-play"></i>
+          </a>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- #intro -->

@@ -1,0 +1,15 @@
+.main-app{
+    overflow: hidden;
+    opacity: 1;
+    -webkit-transition: opacity 2s ease-in-out;
+    transition: opacity 2s ease-in-out;
+}
+#canvas {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+  }
+
+  

@@ -1,0 +1,29 @@
+<!--==========================
+    Navigation
+  ============================-->
+<section class="navigation-section">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-2 col-md-2 col-lg-4">
+      </div>
+      <div class="col-sm-6 col-md-8 col-lg-4">
+
+        <div class="artist-name transparent-btn">
+          <h1>
+            {{currentArtist}}
+          </h1>
+          <i (click)="removeArtist()" class="fa fa-close"></i>
+        </div>
+      </div>
+      <div class="col-sm-4 col-md-2 col-lg-4">
+        <div class="nav-btns">
+          <button class="transparent-btn btn-left" [ngClass]="{'btn-active':currentPage === '/artist'}" (click)="routeToArtist()">
+            Artists </button>
+          <button class="transparent-btn btn-right" [ngClass]="{'btn-active':currentPage === '/song'}" (click)="routeToSong()"> Songs </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- #navigation -->

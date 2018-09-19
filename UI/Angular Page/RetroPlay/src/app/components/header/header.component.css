@@ -1,0 +1,102 @@
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+  a:hover, a:active, a:focus {
+    text-decoration: none;
+  }
+  
+  #nav-menu-container > .nav-menu{
+    cursor: pointer;
+  }
+
+  /*--------------------------------------------------------------
+  # Header
+  --------------------------------------------------------------*/
+
+  #header {
+    padding: 30px 0;
+    height: 92px;
+    position: relative;
+    transition: all 0.5s;
+    z-index: 0;
+  }
+  
+  #header.header-scrolled {
+    background: #191414;
+    transition: all 0.5s;
+  }
+  
+  #header #logo {
+    float: left;
+  }
+  
+  
+  #header #logo h1 {
+    font-size: 34px;
+    line-height: 1;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    letter-spacing: 3px;
+  }
+  
+  #header #logo h1 a, #header #logo h1 a:hover {
+    color: #fff;
+    padding-left: 10px;
+    border-left: 4px solid #18d26e;
+  }
+    
+  /*--------------------------------------------------------------
+  # Navigation Menu
+  --------------------------------------------------------------*/
+  /* Nav Menu Essentials */
+    
+  .nav-menu li {
+    position: relative;
+  }
+  
+  .nav-menu > li {
+    float: left;
+  }
+  
+  .nav-menu li:hover > ul,
+  .nav-menu li.sfHover > ul {
+    display: block;
+  }
+  
+    
+
+  /* Nav Meu Container */
+  #nav-menu-container {
+    float: right;
+  }
+  
+  
+  /* Nav Menu Styling */
+  .nav-menu a {
+    padding: 0 8px 0px 8px;
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: capitalize;
+    outline: none;
+  }
+  
+  .nav-menu li:hover > a, .nav-menu > .menu-active > a {
+    color: #18d26e;
+    font-size: 140%;
+    transition: 0.2s;
+  }
+ .nav-menu ul li:hover > a {
+    color: #18d26e;
+  }
+
+  .scrollto{
+    cursor: pointer;
+  }
+  
+

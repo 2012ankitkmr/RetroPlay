@@ -1,0 +1,26 @@
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #030303;
+    /* background-image: -webkit-radial-gradient(rgba(105, 205, 215, 0.5), rgba(10, 20, 30, 0.5));
+    background-image: radial-gradient(rgba(105, 205, 215, 0.5), rgba(10, 20, 30, 0.5)); */
+}
+
+.gradiantbg{
+    height: 100%;
+    background-image: -webkit-radial-gradient(rgba(105, 205, 215, 0.5), rgba(10, 20, 30, 0.5));
+    background-image: radial-gradient(rgba(105, 205, 215, 0.5), rgba(10, 20, 30, 0.5));
+}
+
+.tech-slideshow {
+    background-image: url("assets/img/Bg/Tiles.jpg");
+    animation: moveSlideshow 25s linear infinite;
+}
+
+@keyframes moveSlideshow {
+    100% {
+      transform: translateX(-66.66666%);
+    }
+  }
+  

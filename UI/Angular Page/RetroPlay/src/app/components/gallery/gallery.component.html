@@ -1,0 +1,19 @@
+<!--==========================
+      Artist Gallery Section 
+    ============================-->
+
+  <section id="gallery" style="visibility : hidden;">
+    <div class="roundabout-carousal" id="waterwheelCarouselmain">
+      <div class="carousal-unit" id="carousal-unit-1" *ngFor="let artist of artists;let i of index;">
+        <div class="gallery-banner" id="gallery-banner">
+          <figure class="figure-element" >
+            <img src="{{ 'assets/img/artists/'+ artist.banner_pic +'.jpg' }}" class="img-fluid" alt="" />
+            <a class="artist-button" title="Open Library" (click)="changeArtist(artist.artist_id)" >
+              <i class="fa fa-music"></i>
+            </a>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- #intro -->

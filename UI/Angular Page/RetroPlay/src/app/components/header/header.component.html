@@ -1,0 +1,32 @@
+<!--==========================
+    Header
+  ============================-->
+<header id="header">
+  <div class="container-fluid">
+    <div id="row">
+      <div class="col-lg-3 col-md-5 col-sm-6 col-xs-11">
+        <div id="logo" class="pull-left">
+          <h1>
+            <a href="/" class="scrollto">Retro Play</a>
+          </h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
+        </div>
+      </div>
+      <div class="col-lg-9 col-md-7 col-sm-6 col-xs-1">
+        <nav id="nav-menu-container">
+          <ul class="nav-menu">
+            <li class="menu-active" (click)="selectAll()" [ngClass]="{'menu-active':selectedMood === allMoods}">
+              <a class="select-mood">ALL</a>
+            </li>
+            <li *ngFor="let mood of Moods" (click)="selectMood(mood.mood_name)" [ngClass]="{'menu-active':selectedMood === mood.mood_name}">
+              <a class="select-mood">{{mood.mood_name}}</a>
+            </li>
+          </ul>
+
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- #header -->
